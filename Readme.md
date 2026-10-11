@@ -167,10 +167,12 @@ Electrical-Fault-Detection-using-ML/
 
 The results depend on the dataset, preprocessing, and train-validation-test split. Further testing on independent operating conditions is needed before considering deployment in a real power system protection relay.
 
-## 👨‍💻 Author
+### 👨‍💻 Authors
 
-**Mirza Abdul Rehman**
+**1. Mirza Abdul Rehman**  
+Electrical Engineering Student
 
+**2. Muhammad Wasiq Aslam**  
 Electrical Engineering Student
 
 ## 📄 License
