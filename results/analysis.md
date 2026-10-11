@@ -48,3 +48,12 @@ In comparison, Set Q Logistic Regression missed 45 faults and produced 6 false a
 For a protection relay, missed faults are particularly dangerous because the relay may fail to respond to a real electrical fault. False alarms are also undesirable because they can cause unnecessary trips and interrupt power supply.
 
 The RBF SVM provides the best results among the tested models. However, before actual deployment, it should be tested on independent, chronologically separated fault events and evaluated for response time, reliability, and safety requirements.
+## 6.7 Practical Deployment Considerations
+
+Although the RBF SVM achieved the best test accuracy in this experiment, selecting a model for an electrical protection system requires more than comparing accuracy scores.
+
+A missed fault is particularly important because the system may fail to identify a dangerous electrical condition. The RBF SVM missed 6 faults, compared with 45 for Logistic Regression on Set Q. However, false alarms also matter because unnecessary trips can interrupt the power supply.
+
+The dataset was randomly split even though its rows represent consecutive time samples. Similar samples may therefore appear in both the training and test sets. This can make the reported test performance optimistic compared with performance on independent operating conditions.
+
+Before practical deployment, the selected model should be evaluated on independent electrical measurements, different fault scenarios, and unseen operating conditions. Its response time and reliability should also be tested. The current results identify a promising model for further evaluation, rather than proving that it is ready for a real protection relay.
