@@ -178,3 +178,13 @@ Electrical Engineering Student
 ## 📄 License
 
 No license has been specified for this repository yet.
+## Model Comparison
+
+| Model | Test Accuracy | False Alarms | Missed Faults |
+|---|---:|---:|---:|
+| Logistic Regression (Set R) | 72.64% | 0 | 657 |
+| Logistic Regression (Set Q) | 97.88% | 6 | 45 |
+| Linear SVM | 73.59% | 0 | 634 |
+| RBF SVM | 99.58% | 4 | 6 |
+
+The RBF SVM achieved the highest test accuracy among the evaluated models. However, the test results may be optimistic because the dataset contains consecutive time samples and was randomly split. Independent testing is needed before practical deployment.
